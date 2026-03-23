@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2745%27 fill=%27%23111%27/%3E%3Crect x=%2742%27 y=%2720%27 width=%2716%27 height=%2740%27 rx=%278%27 fill=%27%2300ff88%27/%3E%3Crect x=%2746%27 y=%2765%27 width=%278%27 height=%2715%27 fill=%27%2300ff88%27/%3E%3C/svg%3E">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Documentation - Voicer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Inter:wght@500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#353534",
+              "primary": "#ffffff",
+              "background": "#0a0a0a",
+              "on-background": "#e5e2e1",
+              "on-surface-variant": "#c6c6c6",
+              "accent": "#00ff88",
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .glass-shimmer {
+        background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.05) 100%);
+      }
+      .ghost-border {
+        border: 0.5px solid rgba(255, 255, 255, 0.15);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+      }
+      .feature-card {
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-accent selection:text-black">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-black/80 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-6 h-16 z-50">
+    <a href="index.html" class="text-xl font-bold tracking-tighter text-white font-headline hover:opacity-80 transition-all">Voicer <span class="text-[10px] uppercase tracking-widest opacity-40 ml-1">Boom Edition</span></a>
+    <nav class="hidden md:flex items-center space-x-8">
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="index.html#features">Features</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white transition-all" href="docs.html">Docs</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="support.html">Support</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="download.html">Download</a>
+    </nav>
+    <button class="bg-white text-black px-6 py-2 rounded-full font-headline text-[13px] font-bold hover:scale-105 transition-all">Buy Now — $19</button>
+</header>
+
+<main class="relative min-h-screen pt-32 pb-48 px-6 max-w-5xl mx-auto overflow-hidden">
+    <!-- Background Ambient Glow -->
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent/5 rounded-full blur-[120px] -z-10"></div>
+    <div class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-accent/5 rounded-full blur-[100px] -z-10"></div>
+
+    <!-- Docs Hero -->
+    <div class="mb-24">
+        <h1 class="text-6xl font-headline font-extrabold tracking-tighter text-white mb-8">Documentation.</h1>
+        <p class="text-white/60 text-xl max-w-2xl font-light leading-relaxed">
+            Everything you need to master the Voicer engine. From initial API setup to advanced auto-paste configurations.
+        </p>
+    </div>
+
+    <!-- Docs Sections -->
+    <div class="space-y-32">
+        <section id="getting-started">
+            <h2 class="text-2xl font-headline font-bold text-white mb-8 flex items-center">
+                <span class="w-8 h-[1px] bg-accent mr-4"></span> Getting Started
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-white font-bold text-lg">Hardware-Grade Setup</h3>
+                    <p class="text-white/40 text-[15px] leading-relaxed">
+                        Once you've downloaded the universal binary, drag Voicer to your Applications folder. On first launch, macOS Sequoia will request Accessibility permissions. This is required for the <span class="text-accent">Bulletproof Auto-Paste</span> engine to detect the active window.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-white font-bold text-lg">API Configuration</h3>
+                    <p class="text-white/40 text-[15px] leading-relaxed">
+                        Voicer requires a Whisper-compatible API key. Open the glass settings panel (Shift + Command + ,) and input your key. We support OpenAI and Groq for sub-second transcription speeds.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features-detail">
+            <h2 class="text-2xl font-headline font-bold text-white mb-8 flex items-center">
+                <span class="w-8 h-[1px] bg-accent mr-4"></span> Core Features
+            </h2>
+            <div class="space-y-16">
+                <div class="bg-white/[0.03] backdrop-blur-2xl p-10 rounded-sm ghost-border">
+                    <div class="flex items-start gap-8 flex-col md:flex-row">
+                        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-accent/10 rounded-sm ghost-border">
+                            <span class="material-symbols-outlined text-accent text-3xl">bolt</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline text-xl font-bold text-white mb-4">Precision Auto-Paste</h3>
+                            <p class="text-white/50 leading-relaxed text-[15px] font-light max-w-2xl mb-6">
+                                Our focus detection system monitors the macOS window server to ensure text is only injected when a cursor is active. If you release the dictation hotkey while focused on a non-text element, Voicer will automatically copy the text to your clipboard instead.
+                            </p>
+                            <ul class="text-white/40 text-sm space-y-2">
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 bg-accent rounded-full"></span> Sub-10ms focus detection</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 bg-accent rounded-full"></span> Intelligent fallback to clipboard</li>
+                                <li class="flex items-center gap-2"><span class="w-1 h-1 bg-accent rounded-full"></span> Support for all native macOS applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/[0.03] backdrop-blur-2xl p-10 rounded-sm ghost-border">
+                    <div class="flex items-start gap-8 flex-col md:flex-row">
+                        <div class="w-16 h-16 shrink-0 flex items-center justify-center bg-accent/10 rounded-sm ghost-border">
+                            <span class="material-symbols-outlined text-accent text-3xl">waves</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline text-xl font-bold text-white mb-4">The Boom Visualizer</h3>
+                            <p class="text-white/50 leading-relaxed text-[15px] font-light max-w-2xl">
+                                The 160-bar high-density visualizer isn't just aesthetic. It provides real-time feedback on your microphone's gain levels and the connection status of the transcription engine. Green peaks indicate optimal signal-to-noise ratio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hotkeys">
+            <h2 class="text-2xl font-headline font-bold text-white mb-8 flex items-center">
+                <span class="w-8 h-[1px] bg-accent mr-4"></span> Master Hotkeys
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white/5 rounded-sm ghost-border">
+                    <div class="text-accent font-mono text-sm mb-4">Shift + T</div>
+                    <div class="text-white font-bold text-sm">Hold to Dictate</div>
+                </div>
+                <div class="p-6 bg-white/5 rounded-sm ghost-border">
+                    <div class="text-accent font-mono text-sm mb-4">Shift + H</div>
+                    <div class="text-white font-bold text-sm">Toggle History Hub</div>
+                </div>
+                <div class="p-6 bg-white/5 rounded-sm ghost-border">
+                    <div class="text-accent font-mono text-sm mb-4">Cmd + ,</div>
+                    <div class="text-white font-bold text-sm">Open Glass Settings</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="py-12 border-t border-white/5 text-center">
+    <p class="text-white/20 text-[10px] uppercase tracking-widest font-bold">&copy; 2026 Voicer Boom Edition. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

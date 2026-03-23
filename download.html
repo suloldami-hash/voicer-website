@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2745%27 fill=%27%23111%27/%3E%3Crect x=%2742%27 y=%2720%27 width=%2716%27 height=%2740%27 rx=%278%27 fill=%27%2300ff88%27/%3E%3Crect x=%2746%27 y=%2765%27 width=%278%27 height=%2715%27 fill=%27%2300ff88%27/%3E%3C/svg%3E">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Download - Voicer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Inter:wght@500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#353534",
+              "primary": "#ffffff",
+              "background": "#0a0a0a",
+              "on-background": "#e5e2e1",
+              "on-surface-variant": "#c6c6c6",
+              "accent": "#00ff88",
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .glass-shimmer {
+        background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.05) 100%);
+      }
+      .ghost-border {
+        border: 0.5px solid rgba(255, 255, 255, 0.15);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-accent selection:text-black">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-black/80 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-6 h-16 z-50">
+    <a href="index.html" class="text-xl font-bold tracking-tighter text-white font-headline hover:opacity-80 transition-all">Voicer <span class="text-[10px] uppercase tracking-widest opacity-40 ml-1">Boom Edition</span></a>
+    <nav class="hidden md:flex items-center space-x-8">
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="index.html#features">Features</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="docs.html">Docs</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white/40 hover:text-white transition-all" href="support.html">Support</a>
+        <a class="font-headline tracking-tight text-[13px] font-medium text-white transition-all" href="download.html">Download</a>
+    </nav>
+    <button class="bg-white text-black px-6 py-2 rounded-full font-headline text-[13px] font-bold hover:scale-105 transition-all">Buy Now — $19</button>
+</header>
+
+<main class="relative min-h-screen pt-32 pb-48 px-6 max-w-4xl mx-auto overflow-hidden">
+    <!-- Background Ambient Glow -->
+    <div class="absolute top-[-10%] left-[50%] w-[50%] h-[50%] bg-accent/5 rounded-full blur-[120px] -z-10 -translate-x-1/2"></div>
+
+    <!-- Download Hero -->
+    <div class="mb-32 text-center">
+        <span class="text-[10px] text-accent uppercase tracking-[0.3rem] font-bold block mb-6">Latest Stable Release</span>
+        <h1 class="text-7xl font-headline font-extrabold tracking-tighter text-white mb-10">Voicer v1.2.0</h1>
+        
+        <div class="flex flex-col items-center gap-8">
+            <a href="#" class="bg-white text-black px-16 py-6 rounded-sm font-headline text-2xl font-bold hover:bg-zinc-200 transition-all shadow-[0_0_50px_rgba(0,255,136,0.15)] flex items-center gap-4 group">
+                <span class="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform">download</span>
+                Download for Mac
+            </a>
+            <div class="text-white/30 text-xs font-medium tracking-[0.2em] uppercase flex items-center gap-4">
+                <span>v1.2.0 (Build 202)</span>
+                <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                <span>Universal Binary</span>
+                <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                <span>42.5 MB</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Changelog -->
+    <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-headline font-bold text-white mb-12 flex items-center">
+            <span class="w-8 h-[1px] bg-accent mr-4"></span> Version History
+        </h2>
+        
+        <div class="space-y-16">
+            <div class="relative pl-8 border-l border-white/5">
+                <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-accent shadow-[0_0_10px_#00ff88]"></div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-white font-bold text-lg">v1.2.0 — The Groq Update</h3>
+                    <span class="text-white/20 text-xs font-mono">March 2026</span>
+                </div>
+                <ul class="text-white/40 text-[14px] space-y-3 leading-relaxed">
+                    <li class="flex items-start gap-2"><span class="text-accent">•</span> Added native Groq integration for sub-200ms transcription latency.</li>
+                    <li class="flex items-start gap-2"><span class="text-accent">•</span> Redesigned the 160-bar visualizer with higher vertex density.</li>
+                    <li class="flex items-start gap-2"><span class="text-accent">•</span> Improved focus-detection for Electron-based apps like Discord and Slack.</li>
+                    <li class="flex items-start gap-2"><span class="text-accent">•</span> Optimized memory footprint during long dictation sessions.</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l border-white/5">
+                <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-white/20"></div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-white font-bold text-lg">v1.1.0 — Studio Voices</h3>
+                    <span class="text-white/20 text-xs font-mono">January 2026</span>
+                </div>
+                <ul class="text-white/40 text-[14px] space-y-3 leading-relaxed">
+                    <li class="flex items-start gap-2"><span>•</span> Integrated Native TTS selection (Onyx, Shimmer, Nova).</li>
+                    <li class="flex items-start gap-2"><span>•</span> Added local history encryption for the Hub Drawer.</li>
+                    <li class="flex items-start gap-2"><span>•</span> Resolved a sandbox permission issue on macOS Sequoia.</li>
+                </ul>
+            </div>
+
+            <div class="relative pl-8 border-l border-white/5">
+                <div class="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-white/20"></div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-white font-bold text-lg">v1.0.0 — Launch Edition</h3>
+                    <span class="text-white/20 text-xs font-mono">December 2025</span>
+                </div>
+                <p class="text-white/40 text-[14px]">Initial public release of Voicer: Boom Edition.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="py-12 border-t border-white/5 text-center">
+    <p class="text-white/20 text-[10px] uppercase tracking-widest font-bold">&copy; 2026 Voicer Boom Edition. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
